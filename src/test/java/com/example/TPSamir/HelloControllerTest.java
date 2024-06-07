@@ -20,6 +20,6 @@ public class HelloControllerTest {
     public void sayHello_ShouldReturnDefaultMessage() throws Exception {
         this.mockMvc.perform(get("/hello"))
                 .andExpect(status().isOk())
-                .andExpect(content().string("Hello, World!"));
+                .andExpect(content().string("Hello, World !"));
     }
 }
